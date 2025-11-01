@@ -1,0 +1,290 @@
+body {
+  margin: 0;
+  font-family: "Inter", Arial, sans-serif;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+.sidebar {
+  background: #fff;
+  width: 184.92px;
+  border-right: 1px solid #eee;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-top: 32px;
+  padding-bottom: 28px;
+}
+.frame {
+  width: 184.92px;
+  height: 311.97px;
+}
+.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  width: 184.92px;
+  height: 95.97px;
+  gap: 17px;
+}
+.logo-name {
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin: 0rem;
+  color: #090909;
+}
+.frame2 {
+  margin-top: 35px;
+  width: 184.92px;
+  height: 152px;
+}
+nav ul {
+  width: 184.92px;
+  height: 40px;
+  gap: 8px;
+  list-style: none;
+  padding: 8px 32px 8px 16px;
+  margin-bottom: auto;
+}
+nav li {
+  margin: 15px 0;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+.logout {
+  margin-top: auto;
+  color: #ffffff;
+  width: 184.92px;
+  height: 24px;
+  cursor: pointer;
+  padding: 8px;
+  gap: 8px;
+}
+.logout img {
+  padding-top: 20px;
+  width: 16px;
+  height: 16px;
+}
+.logout-button {
+  border: none;
+  width: 58px;
+  height: 24px;
+  font-weight: bold;
+  font-size: 18px;
+  padding-left: 5px;
+  color: #333333;
+}
+.main-content {
+  flex: 1;
+  padding: 40px 32px 32px 32px;
+  background: #f9f9f9;
+  min-width: 0;
+}
+.dropdown-row {
+  display: flex;
+  gap: 18px;
+  justify-content: end;
+}
+select {
+  width: 200px;
+  height: 56px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  font-size: 16px;
+  padding-left: 10px;
+  padding-right: 15px;
+}
+.balance-card {
+  width: 300px;
+  height: 90px;
+  margin: 25px 0 18px 0;
+  background: #fff;
+  padding: 20px 22px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(220, 220, 220, 0.15);
+  font-size: 1.2rem;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+.balance {
+  color: #00005c;
+  font-size: 1.5rem;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.balance-card img {
+  height: 90px;
+  width: 90px;
+}
+.balance-amt {
+  color: #11c900;
+  font-size: 1.8rem;
+  margin-top: 7px;
+}
+.new-card {
+  height: 80px;
+  margin: 25px 0 18px 0;
+  background: #fff;
+  padding: 20px 22px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(220, 220, 220, 0.15);
+  font-size: 1.2rem;
+}
+.transactions-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.transactions-table th,
+.transactions-table td {
+  padding: 10px 14px;
+  border-bottom: 1px solid #ececec;
+}
+.transactions-table th {
+  background: #f3f6f8;
+  text-align: left;
+}
+
+/* Responsive: hide sidebar and show main content full width on screens <= 900px */
+@media (max-width: 900px) {
+  .mobile-logom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    width: 100px;
+    height: 60px;
+    gap: 0px;
+  }
+  .logo-name {
+    font-weight: bold;
+    font-size: 0.8rem;
+    margin: 0rem;
+    color: #090909;
+  }
+  .sidebar {
+    display: none !important;
+  }
+  .container {
+    flex-direction: column;
+    height: auto;
+  }
+  .main-content {
+    width: 100vw;
+    min-width: 0;
+    padding: 18px 8px;
+  }
+  .balance-card {
+    font-size: 1rem;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 8px;
+    width: 100%;
+    min-width: 220px;
+    max-width: 95vw;
+  }
+  .balance-card img {
+    display: none;
+  }
+  .transactions-table th,
+  .transactions-table td {
+    padding: 7px 6px;
+    font-size: 0.8rem;
+  }
+  select {
+    width: 100%;
+    min-width: 90px;
+    font-size: 14px;
+    height: 40px;
+  }
+}
+
+/* Extra mobile support: more compact and stacked for screens <= 500px */
+@media (max-width: 500px) {
+  .mobile-logom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    width: 100px;
+    height: 60px;
+    gap: 0px;
+  }
+  .logo-name {
+    font-weight: bold;
+    font-size: 0.8rem;
+    margin: 0rem;
+    color: #090909;
+  }
+  .container {
+    flex-direction: column;
+    height: auto;
+  }
+  .sidebar {
+    display: none !important;
+  }
+  .main-content {
+    padding: 12px 2vw !important;
+    width: 100vw !important;
+    min-width: 0 !important;
+  }
+  .balance-card,
+  .new-card {
+    gap: 4px;
+    font-size: 0.95rem;
+    min-width: 120px;
+    height: auto;
+    padding: 8px 12px;
+  }
+  .balance-card img {
+    display: none;
+  }
+  .transactions-table th,
+  .transactions-table td {
+    font-size: 0.73rem;
+    padding: 5px 3px;
+  }
+}
+
+.transactions-table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.transactions-table {
+  min-width: 520px; /* Adjust for your widest content */
+}
+
+/* Mobile responsiveness */
+@media (max-width: 900px) {
+  .transactions-table-wrapper {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  .transactions-table {
+    min-width: 520px;
+  }
+}
+
+@media (max-width: 1600px) and (min-width: 901px) {
+  .mobile-logom {
+    display: none !important;
+  }
+}
