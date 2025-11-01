@@ -1,70 +1,118 @@
-# Getting Started with Create React App
+# EazyPayouts
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern, responsive payout management system built with React and Spring Boot. Designed for simple company, account, and transaction management—demo-ready and easy to extend!
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- Responsive UI for desktop, tablet, and mobile
+- Sidebar navigation (hidden on mobile, logo shown on mobile top bar)
+- Company and account selection dropdowns
+- View account balance and latest loads
+- Horizontally scrollable transactions table on small screens
+- Mock backend using Spring Boot REST APIs
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Tech Stack
 
-### `npm test`
+- **Frontend:** React (functional components, Hooks)
+- **Styling:** CSS (media queries, mobile-first)
+- **Backend:** Spring Boot (Java, REST)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## Project Structure
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+eazypayouts/
+├─ backend/
+│ └─ src/main/java/... (Spring Boot backend)
+├─ frontend/
+│ ├─ src/
+│ │ ├─ App.jsx
+│ │ ├─ MainContent.jsx
+│ │ ├─ Sidebar.jsx
+│ │ ├─ MobileLogo.jsx
+│ │ ├─ AccountDataTable.jsx
+│ │ └─ App.css
+│ └─ public/
+│ └─ logo.svg
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+## Setup & Run Instructions
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Prerequisites
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- **Node.js** and npm (https://nodejs.org/)
+- **Java JDK 17+** (https://adoptium.net/)
+- **Maven** (`mvn` command)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+---
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### 1. Backend Setup (Spring Boot)
 
-## Learn More
+1. Go to the backend directory:
+    ```
+    cd backend
+    ```
+2. Install dependencies and start the backend server:
+    ```
+    mvn spring-boot:run
+    ```
+3. The backend will start at [**http://localhost:8080**](http://localhost:8080)
+    - Main API endpoints:
+      - `/api/companies`
+      - `/api/accounts?companyId=...`
+      - `/api/account-data?accountId=...`
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### 2. Frontend Setup (React)
 
-### Code Splitting
+1. Open a new terminal window/tab and go to the frontend directory:
+    ```
+    cd frontend
+    ```
+2. Install dependencies:
+    ```
+    npm install
+    ```
+3. Start the React development server:
+    ```
+    npm start
+    ```
+4. The frontend runs at [**http://localhost:3000**](http://localhost:3000)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+---
 
-### Analyzing the Bundle Size
+### 3. Using the App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- Open [http://localhost:3000](http://localhost:3000) in your browser.
+- Use the dropdowns to select a company and account. Account data and transactions will update dynamically.
+- Try resizing your browser or open on mobile—the layout adapts responsively and shows the logo on mobile.
 
-### Making a Progressive Web App
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Screenshots
 
-### Advanced Configuration
+_Add screenshots of desktop, tablet, and mobile layouts here if desired._
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+---
 
-### Deployment
+## Customization
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+- To add or edit companies and accounts, update the backend controller's mock data.
+- For production or real use, connect backend to a real database and secure APIs.
 
-### `npm run build` fails to minify
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## License
+
+Demo/project for educational use.
+
+---
+
+**Enjoy using and extending EazyPayouts!**
