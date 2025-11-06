@@ -1,3 +1,2 @@
-2025/10/31-18:26:57.381 4e14 Reusing MANIFEST C:\Users\rajan\Desktop\EasyPayouts\backend\.metadata\.plugins\org.eclipse.swt\EBWebView\Default\Local Storage\leveldb/MANIFEST-000001
-2025/10/31-18:26:57.391 4e14 Recovering log #3
-2025/10/31-18:26:57.393 4e14 Reusing old log C:\Users\rajan\Desktop\EasyPayouts\backend\.metadata\.plugins\org.eclipse.swt\EBWebView\Default\Local Storage\leveldb/000003.log 
+2025/11/06-12:07:41.981 5740 Creating DB C:\Users\rajan\Desktop\EasyPayouts\backend\.metadata\.plugins\org.eclipse.swt\EBWebView\Default\Local Storage\leveldb since it was missing.
+2025/11/06-12:07:42.004 5740 Reusing MANIFEST C:\Users\rajan\Desktop\EasyPayouts\backend\.metadata\.plugins\org.eclipse.swt\EBWebView\Default\Local Storage\leveldb/MANIFEST-000001

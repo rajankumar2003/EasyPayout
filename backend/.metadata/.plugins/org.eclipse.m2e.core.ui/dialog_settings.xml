@@ -2,7 +2,7 @@
 <section name="Workbench">
 	<section name="MavenProjectImportWizardPage">
 		<list key="rootDirectory">
-			<item value="C:\Users\rajan\Downloads\easyPayouts"/>
+			<item value="C:\Users\rajan\Desktop\EasyPayouts\backend"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
