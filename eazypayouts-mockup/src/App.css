@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family: "Inter", Arial, sans-serif;
+ font-family: 'Inter', 'Roboto', 'Segoe UI', 'Arial', sans-serif;
 }
 
 .container {
@@ -8,6 +8,7 @@ body {
   height: 100vh;
 }
 .sidebar {
+  height: 1024px;
   background: #fff;
   width: 184.92px;
   border-right: 1px solid #eee;
@@ -15,7 +16,8 @@ body {
   flex-direction: column;
   align-items: flex-start;
   padding-top: 32px;
-  padding-bottom: 28px;
+  padding-bottom: 12px;
+  justify-content: space-between;
 }
 .frame {
   width: 184.92px;
@@ -48,16 +50,34 @@ nav ul {
   height: 40px;
   gap: 8px;
   list-style: none;
-  padding: 8px 32px 8px 16px;
+  padding: 0px;
   margin-bottom: auto;
 }
 nav li {
-  margin: 15px 0;
+  padding: 8px 32px 8px 16px;
+  margin: 10px 0;
   font-size: 1.1rem;
   cursor: pointer;
 }
+.loads {
+  background-color: #00005c;
+  color: #ffffff;
+}
+nav li img {
+  /* color: #333333; */
+  padding-right: 7px;
+}
+.statement {
+  color: #cacaca;
+}
+.transaction {
+  color: #333333;
+}
 .logout {
-  margin-top: auto;
+  /* margin-top: auto; */
+  /* position: fixed;
+  bottom: 20px;
+  left: 20px; */
   color: #ffffff;
   width: 184.92px;
   height: 24px;
@@ -66,23 +86,24 @@ nav li {
   gap: 8px;
 }
 .logout img {
-  padding-top: 20px;
-  width: 16px;
-  height: 16px;
+  /* padding-top: 20px; */
+  width: 12px;
+  height: 12px;
 }
 .logout-button {
+  background-color: white;
   border: none;
   width: 58px;
   height: 24px;
-  font-weight: bold;
-  font-size: 18px;
-  padding-left: 5px;
+  /* font-weight: bold; */
+  font-size: 16px;
+  padding-left: 0px;
   color: #333333;
 }
 .main-content {
   flex: 1;
   padding: 40px 32px 32px 32px;
-  background: #f9f9f9;
+  background: #fefefe;
   min-width: 0;
 }
 .dropdown-row {
@@ -101,12 +122,12 @@ select {
 }
 .balance-card {
   width: 300px;
-  height: 90px;
+  height: 75px;
   margin: 25px 0 18px 0;
-  background: #fff;
+  background: #ffffff;
   padding: 20px 22px;
   border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(220, 220, 220, 0.15);
+  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.25);
   font-size: 1.2rem;
   justify-content: center;
   align-items: center;
@@ -156,6 +177,9 @@ select {
 .transactions-table th {
   background: #f3f6f8;
   text-align: left;
+}
+.credit {
+  color: #11c900;
 }
 
 /* Responsive: hide sidebar and show main content full width on screens <= 900px */

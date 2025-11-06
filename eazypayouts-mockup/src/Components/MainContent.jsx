@@ -68,7 +68,7 @@ export default function MainContent() {
       {activeData && (
         <div className="balance-card">
           {/* If your SVG is in public folder */}
-          <img src="/Account-Balance-logo.svg" alt="" style={{ width: 32, height: 32 }} />
+          <img src="/Account-Balance-logo.svg" alt=""  />
           <div className="balance">
             <div>Available Balance</div>
             <div className="balance-amt">₹ {activeData.balance.toLocaleString()}</div>
@@ -76,11 +76,11 @@ export default function MainContent() {
         </div>
       )}
 
-      {activeData && (
+      {/* {activeData && (
         <div className="new-card">
           <div>Latest loads are displayed here</div>
         </div>
-      )}
+      )} */}
 
       {activeData && <AccountDataTable transactions={activeData.transactions} />}
     </div>

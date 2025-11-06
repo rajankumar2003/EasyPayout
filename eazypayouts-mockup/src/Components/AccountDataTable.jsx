@@ -1,8 +1,11 @@
-import React from 'react';
+import React from "react";
 
 export default function AccountDataTable({ transactions }) {
   return (
     <div className="transactions-table-wrapper">
+      <div className="new-card">
+        <div>Latest loads are displayed here</div>
+      </div>
       <table className="transactions-table">
         <thead>
           <tr>
@@ -17,7 +20,7 @@ export default function AccountDataTable({ transactions }) {
           {transactions.map((tx, idx) => (
             <tr key={idx}>
               <td>{tx.date}</td>
-              <td className='credit'>₹ {tx.credit.toLocaleString()}</td>
+              <td className="credit">₹ {tx.credit.toLocaleString()}</td>
               <td>₹ {tx.acBalance.toLocaleString()}</td>
               <td>{tx.utr}</td>
               <td>{tx.upi}</td>
